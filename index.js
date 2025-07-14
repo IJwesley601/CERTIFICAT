@@ -31,7 +31,7 @@ app.get('/api/:date?', (req, res) => {
   if (!dateString) {
     date = new Date();
   } else if (!isNaN(dateString)) {
-    // Si c'est un timestamp UNIX
+
     date = new Date(Number(dateString));
   } else {
     date = new Date(dateString);
